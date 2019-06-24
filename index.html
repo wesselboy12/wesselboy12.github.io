@@ -14,10 +14,18 @@
         justify-content: center;
       }
     </style>
+    <script>
+      (function () {
+		let wip = document.getElementById('WIP');
+		setInterval(function(){  
+			wip = wip.innerHTML.lenght === 1 ? '..' : wip.innerHTML.lenght === 2 ? '...' : '.';
+		}, 100);
+	  })();
+    </script>
   </head>
   <body>
     <div>
-    <p>Work in progress</p>
+    <h1 id="WIP">Work in progress</h1>
     </div>
   </body>
 </html>

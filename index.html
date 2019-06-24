@@ -15,12 +15,12 @@
       }
     </style>
     <script>
-      (function () {
+      window.onload = () => {
 		let wip = document.getElementById('WIP');
 		setInterval(function(){  
 			wip = wip.innerHTML.lenght === 1 ? '..' : wip.innerHTML.lenght === 2 ? '...' : '.';
 		}, 100);
-	  })();
+	  };
     </script>
   </head>
   <body>
